@@ -1,0 +1,172 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T00:00:00.000Z" agent="5.0" etag="school-conceptual" version="21.0.0" type="device">
+  <diagram name="Концептуальная модель Школа" id="school-model">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Сущность: Учителя -->
+        <mxCell id="entity-teachers" value="УЧИТЕЛЯ" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;resizeLast=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="teachers-row1" value="* ID_учителя (PK)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-teachers">
+          <mxGeometry y="30" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="teachers-row2" value="Фамилия" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-teachers">
+          <mxGeometry y="54" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="teachers-row3" value="Имя" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-teachers">
+          <mxGeometry y="78" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="teachers-row4" value="Отчество" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-teachers">
+          <mxGeometry y="102" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="teachers-row5" value="Телефон" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-teachers">
+          <mxGeometry y="126" width="220" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- Сущность: Предметы -->
+        <mxCell id="entity-subjects" value="ПРЕДМЕТЫ" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;resizeLast=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="220" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="subjects-row1" value="* ID_предмета (PK)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-subjects">
+          <mxGeometry y="30" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="subjects-row2" value="Название" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-subjects">
+          <mxGeometry y="54" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="subjects-row3" value="Часы_в_неделю" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-subjects">
+          <mxGeometry y="78" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="subjects-row4" value="# ID_учителя (FK → Учителя)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-subjects">
+          <mxGeometry y="102" width="220" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- Сущность: Расписание -->
+        <mxCell id="entity-schedule" value="РАСПИСАНИЕ" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;resizeLast=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="420" width="260" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-row1" value="* ID_расписания (PK)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-schedule">
+          <mxGeometry y="30" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-row2" value="День_недели" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-schedule">
+          <mxGeometry y="54" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-row3" value="Время_начала" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-schedule">
+          <mxGeometry y="78" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-row4" value="Время_окончания" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-schedule">
+          <mxGeometry y="102" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-row5" value="Аудитория" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-schedule">
+          <mxGeometry y="126" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-row6" value="Класс" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-schedule">
+          <mxGeometry y="150" width="260" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- Сущность: Ученики -->
+        <mxCell id="entity-students" value="УЧЕНИКИ" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;resizeLast=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="300" width="240" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="students-row1" value="* ID_ученика (PK)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-students">
+          <mxGeometry y="30" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="students-row2" value="Фамилия" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-students">
+          <mxGeometry y="54" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="students-row3" value="Имя" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-students">
+          <mxGeometry y="78" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="students-row4" value="Отчество" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-students">
+          <mxGeometry y="102" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="students-row5" value="Дата_рождения" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-students">
+          <mxGeometry y="126" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="students-row6" value="Класс" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;" vertex="1" parent="entity-students">
+          <mxGeometry y="150" width="240" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- Связь Учителя - Предметы (1:N) -->
+        <mxCell id="edge-teacher-subject" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;startFill=0;endFill=0;" edge="1" parent="1" source="entity-teachers" target="entity-subjects">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-teacher-subject-label" value="преподаёт" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-teacher-subject">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="15" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Связь Предметы - Расписание (1:N) -->
+        <mxCell id="edge-subject-schedule" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;startFill=0;endFill=0;" edge="1" parent="1" source="entity-subjects" target="entity-schedule">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="280" />
+              <mxPoint x="530" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subject-schedule-label" value="входит в" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-subject-schedule">
+          <mxGeometry x="-0.1" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Связь Ученики - Расписание (M:N по классу) -->
+        <mxCell id="edge-student-schedule" value="M : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;startFill=0;endFill=0;dashed=1;" edge="1" parent="1" source="entity-students" target="entity-schedule">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="480" />
+              <mxPoint x="730" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-student-schedule-label" value="посещают (по классу)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-student-schedule">
+          <mxGeometry x="-0.1" y="2" relative="1" as="geometry">
+            <mxPoint x="-30" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace BankApp
+{
+    public partial class DepositsForm : Form
+    {
+        public DepositsForm()
+        {
+            InitializeComponent();
+        }
+
+        private void tpInterest_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
